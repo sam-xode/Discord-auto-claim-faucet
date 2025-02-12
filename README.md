@@ -64,7 +64,7 @@ This code is used to automatically claim faucets by sending messages to multiple
 
 ## 🛠 How to Use
 
-1. Run the bot:
+1. Run the code:
    ```sh
    python auto.py
    ```
