@@ -55,9 +55,9 @@ This code is used to automatically claim faucets by sending messages to multiple
    ```sh
    pip install -r requirements.txt
    ```
-3. Run the bot for the first time. It will automatically create a `.env` file and prompt you to enter your **DISCORD_TOKEN**, which will then be saved in the `.env` file:
+3. Run the code for the first time. It will automatically create a `.env` file and prompt you to enter your **DISCORD_TOKEN**, which will then be saved in the `.env` file:
    ```sh
-   python bot.py
+   python auto.py
    ```
 
 ---
