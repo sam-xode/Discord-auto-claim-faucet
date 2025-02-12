@@ -16,6 +16,35 @@ This code is used to automatically claim faucets by sending messages to multiple
 ---
 
 ## 📥 Installation
+0. Retrieve Your Discord Token
+   Using JavaScript Console
+
+   1. Ensure you are **logged into your Discord account**.
+   2. Open **Developer Tools** (`F12` or `Ctrl + Shift + I`).
+   3. Navigate to the **Console** tab.
+   4. Paste the following JavaScript code and press `Enter`:
+   
+      ```js
+      (
+          webpackChunkdiscord_app.push(
+              [
+                  [''],
+                  {},
+                  e => {
+                      m=[];
+                      for(let c in e.c)
+                          m.push(e.c[c])
+                  }
+              ]
+          ),
+          m
+      ).find(
+          m => m?.exports?.default?.getToken !== void 0
+      ).exports.default.getToken()
+      ```
+   
+    Your Discord token will be displayed in the console.
+
 
 1. Clone this repository:
    ```sh
