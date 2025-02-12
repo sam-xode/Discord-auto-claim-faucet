@@ -48,7 +48,7 @@ This code is used to automatically claim faucets by sending messages to multiple
 
 1. Clone this repository:
    ```sh
-   [git clone https://github.com/username/repo-name.git](https://github.com/sam-xode/Discord-auto-claim-faucet.git)
+   git clone https://github.com/sam-xode/Discord-auto-claim-faucet.git
    cd repo-name
    ```
 2. Install dependencies:
