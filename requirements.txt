@@ -1,4 +1,4 @@
-﻿requests
+requests
 python-dotenv
 logging
-samxode-wm
+samxode==0.1.2
