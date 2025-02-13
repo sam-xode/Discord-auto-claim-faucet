@@ -19,18 +19,18 @@ jobs:
         python-version: "3.x"
 
     - name: Install dependencies
-      run: pip install samxode-wm
+      run: pip install samxode==0.1.2
 
     - name: Add watermark to Python files
       run: |
         python -c "
         import os
-        from samxode_wm import watermark
+        from samxode import watermark
         for file in os.listdir('.'):
             if file.endswith('.py'):
                 with open(file, 'r+', encoding='utf-8') as f:
                     content = f.read()
-                    if 'samxode_wm' not in content:
+                    if 'samxode' not in content:
                         f.seek(0, 0)
                         f.write(watermark() + '\n' + content)
         "
