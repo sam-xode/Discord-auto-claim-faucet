@@ -1,4 +1,4 @@
 requests
 python-dotenv
 logging
-samxode==0.1.2
+samxodee==0.1.0
