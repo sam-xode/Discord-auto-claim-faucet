@@ -1,0 +1,44 @@
+name: Add Watermark
+
+on: 
+  push:
+    branches:
+      - main  # Sesuaikan dengan branch yang diinginkan
+
+jobs:
+  add_watermark:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.x"
+
+    - name: Install dependencies
+      run: pip install samxode-wm
+
+    - name: Add watermark to Python files
+      run: |
+        python -c "
+        import os
+        from samxode_wm import watermark
+        for file in os.listdir('.'):
+            if file.endswith('.py'):
+                with open(file, 'r+', encoding='utf-8') as f:
+                    content = f.read()
+                    if 'samxode_wm' not in content:
+                        f.seek(0, 0)
+                        f.write(watermark() + '\n' + content)
+        "
+
+    - name: Commit changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m "Added watermark" || echo "No changes to commit"
+        git push
