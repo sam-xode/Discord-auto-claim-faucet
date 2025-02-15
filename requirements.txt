@@ -1,4 +1,4 @@
+logging
 requests
 python-dotenv
-logging
-samxodee==0.1.0
+samxode_ip
