@@ -80,7 +80,7 @@ python sam.py
 
 1️⃣ **CLAIM ALL FAUCETS** - Claims all configured faucets.
 
-2️⃣ **Add a new faucet claim message** - Adds a new message to claim faucet and saves it in `.env`. Follow these steps:
+2️⃣ **Add a new message** - Adds a new message to claim faucet and saves it in `.env`. Follow these steps:
 
 1. Enter **Discord Tokens**, separated by commas. Example:
    ```
@@ -90,7 +90,7 @@ python sam.py
 3. Enter the **Channel ID** where the message will be sent.
 4. Enter the **message** corresponding to each Discord token, separated by `|`. Ensure the order matches the token order. Example:
    ```
-   Hello, this is Token_1|Claiming now from Token_2|Token_3 here to claim!
+   !faucet 0x124413212512|!faucet 0x51231251232123|!faucet 0x12513412321852
    ```
 5. Enter the **auto-claim interval**, e.g.:
    - `6h` → Bot will resend the message every **6 hours**.
@@ -106,7 +106,7 @@ python sam.py
 
 ## 📌 How to Mention Users or Channels in Messages
 
-To include mentions in your faucet messages, use the following format:
+To include mentions in your messages to claim faucet, use the following format:
 
 ### 🔹 Mentioning Users
 
