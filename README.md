@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 ### 4. First-Time Run
 
-The script will automatically create a `.env` file and prompt you to enter **DISCORD_TOKENS**, which will be stored in `.env`:
+The script will automatically create a `.env`:
 
 ```bash
 python sam.py
