@@ -80,7 +80,7 @@ python sam.py
 
 1️⃣ **CLAIM ALL FAUCETS** - Claims all configured faucets.
 
-2️⃣ **Add a new faucet claim message** - Adds a new faucet and saves it in `.env`. Follow these steps:
+2️⃣ **Add a new faucet claim message** - Adds a new message to claim faucet and saves it in `.env`. Follow these steps:
 
 1. Enter **Discord Tokens**, separated by commas. Example:
    ```
