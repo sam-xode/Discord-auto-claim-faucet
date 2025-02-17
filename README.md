@@ -141,7 +141,7 @@ To get a **channel ID**:
 With this format, the bot will send messages that directly mention the specified users or channels.
 
 ### 🎥 Video Tutorial
-Watch the tutorial on how to get channel id here: [YouTube Tutorial]([https://youtu.be/s5d_JJ1YQuQ])
+Watch the tutorial on how to get channel id here: ➡️ [Youtube Tutorial](https://youtu.be/s5d_JJ1YQuQ)
 
 ---
 
