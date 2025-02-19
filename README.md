@@ -48,7 +48,7 @@ Ensure you are logged into your Discord account.
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/sam-xode/Discord-auto-claim-faucet.git
+git clone https://github.com/sam-xode/Auto-Faucet-Claim-in-Discord.git
 cd Discord-auto-claim-faucet
 ```
 
