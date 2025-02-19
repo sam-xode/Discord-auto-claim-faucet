@@ -1,4 +1,4 @@
-# 🚀 Discord Faucet Auto Claim Bot
+# 🚀 Auto Faucet Claim in Discord
 
 This bot is designed to automatically claim faucets by sending messages to configured Discord channels. It also handles rate limits and slow mode automatically.
 
